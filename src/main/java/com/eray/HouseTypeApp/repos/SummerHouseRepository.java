@@ -14,4 +14,6 @@ public interface SummerHouseRepository extends JpaRepository<SummerHouse, Long> 
 	List<SummerHouse> listSummerHouseTotalPrice();
 	@Query(value = "SELECT AVG(squareMeters) as avg_squareMeters FROM summerhouses", nativeQuery = true)
 	List<SummerHouse> listSummerHouseAvgSquareMeters();
+	@Query(value = "SELECT * FROM summerhouses WHERE room_count = ?1 ", nativeQuery = true)
+	List<House> listSummerHouseRoomCount(int roomCount);
 }
