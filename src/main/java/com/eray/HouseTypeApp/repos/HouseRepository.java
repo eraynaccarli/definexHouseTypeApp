@@ -15,4 +15,6 @@ public interface HouseRepository extends JpaRepository<House, Long> {
 	List<House> listHouseTotalPrice();
 	@Query(value = "SELECT AVG(squareMeters) as avg_squareMeters FROM houses", nativeQuery = true)
 	List<House> listHouseAvgSquareMeters();
+	@Query(value = "SELECT * FROM houses WHERE room_count = ?1 ", nativeQuery = true)
+	List<House> listHouseRoomCount(int roomCount);
 }
