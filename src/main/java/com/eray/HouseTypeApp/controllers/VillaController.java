@@ -25,4 +25,10 @@ public class VillaController {
 	public List<Villa> listVillaAvgSquareMeters(){
 		return villaService.listVillaAvgSquareMeters();
 	}
+	
+	
+	@GetMapping("/roomCount")
+	public List<Villa> listVillaRoomCount(){
+		return villaService.listVillaRoomCount();
+	}
 }
