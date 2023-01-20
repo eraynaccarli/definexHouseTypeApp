@@ -20,6 +20,12 @@ public class HouseService {
 		// TODO Auto-generated method stub
 		return houseRepository.listHouseAvgSquareMeters();
 	}
+	
+	public List<House> listHouseRoomCount() {
+		// TODO Auto-generated method stub
+		return houseRepository.listHouseRoomCount();
+	}
+	
 
 	
 }
