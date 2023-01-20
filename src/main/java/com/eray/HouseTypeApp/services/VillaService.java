@@ -18,5 +18,9 @@ public class VillaService {
 	public List<Villa> listVillaAvgSquareMeters() {
 		return villaRepository.listVillaAvgSquareMeters();
 	}
+	
+	public List<Villa> listVillaRoomCount() {
+		return villaRepository.listVillasRoomCount();
+	}
 
 }
