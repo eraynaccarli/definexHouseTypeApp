@@ -19,5 +19,9 @@ public class SummerHouseService {
 	public List<SummerHouse> listSummerHouseAvgSquareMeters() {
 		return summerHouseRepository.listSummerHouseAvgSquareMeters();
 	}
+	
+	public List<SummerHouse> listSummerHouseRoomCount() {
+		return summerHouseRepository.listSummerHouseRoomCount();
+	}
 
 }
