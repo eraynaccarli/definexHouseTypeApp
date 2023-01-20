@@ -26,4 +26,9 @@ public class SummerHouseController {
 	public List<SummerHouse> listVillaAvgSquareMeters(){
 		return summerhouseService.listSummerHouseAvgSquareMeters();
 	}
+	
+	@GetMapping("/roomCount")
+	public List<SummerHouse> listSummerHouseRoomCount(){
+		return summerhouseService.listSummerHouseRoomCount();
+	}
 }
