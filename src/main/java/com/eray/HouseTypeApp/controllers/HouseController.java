@@ -28,8 +28,8 @@ public class HouseController {
 	}
 	
 	@GetMapping("/roomCount")
-	public List<House> listHouseRoomCountMeters(){
-		return houseService.listHouseRoomCountMeters();
+	public List<House> listHouseRoomCount(){
+		return houseService.listHouseRoomCount();
 	}
 	
 }
