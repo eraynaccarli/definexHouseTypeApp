@@ -12,4 +12,6 @@ public interface VillaRepository extends JpaRepository<Villa, Long>{
 	List<Villa> listVillaTotalPrice();
 	@Query(value = "SELECT AVG(squareMeters) as avg_squareMeters FROM villas", nativeQuery = true)
 	List<Villa> listVillaAvgSquareMeters();
+	@Query(value = "SELECT * FROM villas WHERE room_count = ?1 ", nativeQuery = true)
+	List<House> listVillasRoomCount(int roomCount);
 }
