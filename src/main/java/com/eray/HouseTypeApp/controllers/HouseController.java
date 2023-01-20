@@ -27,4 +27,9 @@ public class HouseController {
 		return houseService.listHouseAvgSquareMeters();
 	}
 	
+	@GetMapping("/roomCount")
+	public List<House> listHouseRoomCountMeters(){
+		return houseService.listHouseRoomCountMeters();
+	}
+	
 }
